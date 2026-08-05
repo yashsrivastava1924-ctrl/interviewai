@@ -1,10 +1,13 @@
+import Navbar from "../components/Navbar"
+import Hero from "../components/Hero"
+
 function HomePage() {
   return (
-    <div>
-      <h1>Welcome to InterviewAI 🚀</h1>
-      <p>Your AI-powered mock interview platform.</p>
+    <div className="min-h-screen bg-slate-900">
+      <Navbar />
+      <Hero />
     </div>
-  );
+  )
 }
 
-export default HomePage;
+export default HomePage
