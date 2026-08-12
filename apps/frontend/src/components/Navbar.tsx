@@ -1,21 +1,32 @@
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <nav className="w-full flex justify-between items-center px-10 py-6">
-      <h1 className="text-2xl font-bold text-white">
+      <Link
+        to="/"
+        className="text-2xl font-bold text-white"
+      >
         InterviewAI 🚀
-      </h1>
+      </Link>
 
       <div className="space-x-6">
-        <button className="text-gray-300 hover:text-white">
+        <Link
+          to="/login"
+          className="text-gray-300 hover:text-white"
+        >
           Login
-        </button>
+        </Link>
 
-        <button className="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-lg">
+        <Link
+          to="/signup"
+          className="rounded-lg bg-blue-600 px-5 py-2 hover:bg-blue-700"
+        >
           Get Started
-        </button>
+        </Link>
       </div>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
